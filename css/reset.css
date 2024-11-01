@@ -116,6 +116,7 @@ img {
 }
 
 :root {
+    --default: #a9a9a9;
     --color-text: #363636;
     --color-darck: #040404;
     --color-gold: #9f6b08;
