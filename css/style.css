@@ -10,6 +10,14 @@
    background-color: var(--bg-fraim);
 }
 
+.header {
+   padding: 25px 0 18px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   background-image: linear-gradient(180deg, d8d4ca 0%, rgba(217, 217, 217, 0)100%);
+}
+
 .header__container {
    display: flex;
    justify-content: space-between;
@@ -21,12 +29,20 @@
    margin: 0;
    display: flex;
    justify-content: space-between;
-   margin-top: 50px;
+   padding-top: 25px;
+   gap: 0 40px;
+
+}
+
+.header__list--left {
+   margin-left: 25px;
+}
+
+.header__list-right {
+   margin-right: 80px;
 }
 
 .header__item {
-   display: flex;
-   margin-right: 40px;
    vertical-align: middle;
 }
 
@@ -42,7 +58,64 @@
    font-size: 16px;
 }
 
-.header__logo {
-   margin-top: 24px;
-   margin-bottom: 33px;
+/* .header__logo {
+   position: absolute;
+   left: 50%;
+   right: 50%;
+} */
+
+/* promo */
+
+.promo {
+   background-image: url("/images/bg/bg-lamba.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.promo__inner {
+   min-height: 100vh;
+}
+
+.promo__title {
+   font-family: "Impact", sans-serif;
+   font-weight: 400;
+   font-size: var(--font-size-max);
+   letter-spacing: 0.02em;
+   margin: 0;
+   padding-top: 98px;
+   text-align: center;
+   text-transform: uppercase;
+   min-height: 80px;
+   margin-bottom: 10px;
+}
+
+.promo__subtitle {
+   font-family: "Impact", sans-serif;
+   font-weight: 400;
+   font-size: var(--font-size-x);
+   margin: 0;
+   min-height: 59px;
+   text-align: center;
+}
+
+.promo__text {
+   font-family: "Impact", sans-serif;
+   font-weight: 400;
+   font-size: var(--font-size-xm);
+   color: var(--color-gold);
+   min-height: 34px;
+   margin: 29px 0 0;
+   text-align: center;
+
+}
+
+.promo__span {
+   font-family: "Roboto Condensed", sans-serif;
+   color: var(--color-text);
+   font-size: var(--font-size-m);
+   display: block;
+   margin-top: 10px;
+   min-height: 18px;
 }
