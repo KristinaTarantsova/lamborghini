@@ -90,7 +90,7 @@
 /* promo */
 
 .promo {
-   background-image: url("/images/bg/bg-lamba.jpg");
+   background-image: url("images/bg/bg-lamba.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -163,7 +163,7 @@
    content: "";
    width: 30px;
    height: 30px;
-   mask-image: url("/images/bg/array.svg");
+   mask-image: url("images/bg/array.svg");
    mask-position: center;
    background-color: var(--color-dark);
    mask-size: 30px 30px;
