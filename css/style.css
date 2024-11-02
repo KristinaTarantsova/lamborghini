@@ -7,7 +7,7 @@
    font-style: normal;
    font-size: var(--font-size-xs);
    color: var(--color-dark);
-   background-color: var(--bg-fraim);
+   background-color: var(--bg-frame);
 }
 
 .header {
@@ -126,6 +126,7 @@
    font-weight: 400;
    font-size: var(--font-size-x);
    margin: 0;
+   margin-bottom: 10px;
    min-height: 59px;
    text-align: center;
 }
@@ -136,7 +137,7 @@
    font-size: var(--font-size-xm);
    color: var(--color-gold);
    min-height: 34px;
-   margin: 29px 0 0;
+   margin: 0;
    text-align: center;
 
 }
@@ -146,10 +147,9 @@
    color: var(--color-text);
    font-size: var(--font-size-m);
    display: block;
-   margin-top: 10px;
+   padding-top: 10px;
    min-height: 18px;
-   padding-bottom: 51px;
-   border-bottom: 1px solid var(--color-darck);
+   border-top: 1px solid var(--color-dark);
 }
 
 .promo__array-link {
@@ -164,7 +164,7 @@
    height: 30px;
    mask-image: url("/images/bg/array.svg");
    mask-position: center;
-   background-color: var(--color-darck);
+   background-color: var(--color-dark);
    mask-size: 30px 30px;
    display: block;
 }
