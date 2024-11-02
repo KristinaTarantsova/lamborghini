@@ -36,7 +36,7 @@
 }
 
 .header__list--left {
-   margin-left: 25px;
+   margin-left: 13px;
 }
 
 .header__list-right {
@@ -72,7 +72,7 @@
 
 .header__logo[href]:hover {
    opacity: 0.7;
-  
+
 }
 
 .header__link[href]:focus-visible,
@@ -90,18 +90,20 @@
 /* promo */
 
 .promo {
-   background-image: url("/images/bg/bg-lamba.jpg");
+   height: 100%;
+   background-image: url("../images/bg/bg-lamborghini.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
-
 }
 
 .promo__inner {
+   display: flex;
+   flex-direction: column;
    max-width: 905px;
    margin: 0 auto;
    min-height: 100vh;
-   padding: 98px 5px 0;
+   padding: 98px 0 30px;
 }
 
 .promo__title {
@@ -109,7 +111,7 @@
    font-family: "Impact", sans-serif;
    font-weight: 400;
    font-size: var(--font-size-max);
-   letter-spacing: 0.2px;
+   letter-spacing: 2px;
    margin: 0;
    text-align: center;
    text-transform: uppercase;
@@ -118,7 +120,7 @@
 }
 
 .promo__box {
-   max-width: 386px;
+   /* max-width: 386px; */
    margin: 0 auto;
 }
 
@@ -151,19 +153,19 @@
    padding-top: 10px;
    min-height: 18px;
    border-top: 1px solid var(--color-dark);
+
 }
 
 .promo__array-link {
-   display: flex;
-   justify-content: center;
-
+   margin: 0 auto;
+   margin-top: auto;
 }
 
 .promo__array-link::before {
    content: "";
    width: 30px;
    height: 30px;
-   mask-image: url("/images/bg/array.svg");
+   mask-image: url("../images/bg/array.svg");
    mask-position: center;
    background-color: var(--color-dark);
    mask-size: 30px 30px;
