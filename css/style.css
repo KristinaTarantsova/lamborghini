@@ -8,6 +8,7 @@
    font-size: var(--font-size-xs);
    color: var(--color-dark);
    background-color: var(--bg-frame);
+   margin: 0;
 }
 
 .header {
