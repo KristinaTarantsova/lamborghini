@@ -11,17 +11,26 @@
    margin: 0;
 }
 
-.header {
-   padding: 25px 0 18px;
-   position: absolute;
-   left: 0;
-   right: 0;
-   background-image: linear-gradient(180deg, d8d4ca 0%, rgba(217, 217, 217, 0)100%);
-   min-height: 87px;
-   flex-wrap: wrap;
+.background {
+   height: 100%;
+   background-image: url("../images/bg/bg-lamborghini.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-.header__container {
+.header {
+   max-width: fit-content;
+   margin: 0 auto;
+   padding: 50px 86px 19px 25px;
+   background-image: linear-gradient(180deg, d8d4ca 0%, rgba(217, 217, 217, 0)100%);
+   min-height: 62px;
+   margin-bottom: 11px;
+   flex-wrap: wrap;
+   position: relative;
+}
+
+.header__nav {
    display: flex;
    justify-content: space-between;
 }
@@ -33,16 +42,16 @@
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
-   padding-top: 25px;
+   box-sizing: border-box;
    gap: 0 40px;
 }
 
 .header__list--left {
-   margin-left: 13px;
+   padding-right: 121px;
 }
 
 .header__list-right {
-   margin-right: 80px;
+   padding-left: 121px;
 }
 
 .header__item {
@@ -59,6 +68,13 @@
    color: var(--color-text);
    min-height: 18px;
    font-size: var(--font-size-m);
+   letter-spacing: -1px;
+}
+
+.header__img {
+   display: block;
+   margin-top: -25px;
+   margin-bottom: -52px;
 }
 
 .header__link:not([href]),
@@ -88,21 +104,13 @@
 
 /* promo */
 
-.promo {
-   height: 100%;
-   background-image: url("../images/bg/bg-lamborghini.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
 .promo__inner {
    display: flex;
    flex-direction: column;
    max-width: 905px;
    margin: 0 auto;
    min-height: 100vh;
-   padding: 98px 0 30px;
+   padding-bottom: 30px;
 }
 
 .promo__title {
@@ -389,3 +397,5 @@
    display: block;
    margin: 0 auto;
 }
+
+/* evo-black */
