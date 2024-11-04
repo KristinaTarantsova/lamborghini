@@ -11,21 +11,29 @@ html {
 img {
     max-width: 100%;
     height: auto;
+    /* object-fit: cover; */
     object-fit: contain;
 }
-
-.container {
+.header__container,
+.promo__container {
     width: 1200px;
     margin: 0 auto;
     /* padding: 0 10px; */
 }
+.container {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 153px;
+}
 
+/* создадет кастомные свойства */
 :root {
     --default: #a9a9a9;
     --color-text: #363636;
     --color-dark: #040404;
     --color-gold: #9f6b08;
     --bg-frame: #ffffff;
+    --bg-width-opacity: rgba(255, 255, 255, 0.8);
     --font-size-max: 76px;
     --font-size-x: 48px;
     --font-size-light: 32px;
