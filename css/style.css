@@ -74,6 +74,7 @@
 .header__logo {
    display: block;
 }
+
 .header__img {
    display: block;
    margin-top: -25px;
@@ -402,3 +403,193 @@
 }
 
 /* evo-black */
+.evo {
+   padding-bottom: 100px;
+
+}
+
+.evo-black {
+   padding-top: 117px;
+   padding-bottom: 33px;
+   background-color: var(--color-text);
+}
+
+.evo-black__innit {
+   color: var(--bg-frame);
+   letter-spacing: -1px;
+   position: relative;
+}
+
+.evo-black__innit::before {
+   content: "";
+   position: absolute;
+   width: 203px;
+   height: 206px;
+   top: 217px;
+   left: -142px;
+   background-image: url("../images/evo/polygon4.png");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.evo-black__innit::after {
+   content: "";
+   position: absolute;
+   width: 556px;
+   height: 561px;
+   top: 299px;
+   left: -70px;
+   background-image: url("../images/evo/polygon2.png");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.evo-black__wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.evo-black__title {
+   margin: 0;
+   font-size: var(--font-size-light);
+   font-weight: 300;
+   text-transform: uppercase;
+   padding-right: 20px;
+}
+
+.evo-black__holder {
+   width: 437px;
+   min-height: 217px;
+}
+
+.evo-black__text {
+   margin: 0;
+   color: var(--bg-frame);
+   margin-bottom: 30px;
+}
+
+.evo-black__text:last-child {
+   margin-bottom: 0;
+}
+
+.evo-black__img {
+   margin: 198px auto 58px;
+   display: block;
+   position: relative;
+   z-index: 1;
+}
+
+/* таблица */
+.evo-black__list {
+   display: flex;
+   justify-content: center;
+   margin: 0;
+   column-gap: 65px;
+   letter-spacing: -1px;
+}
+
+.evo-black__item {
+   margin: 0;
+   text-transform: uppercase;
+}
+
+/* светлый блок */
+.evo-width {
+   margin-top: 143px;
+}
+.evo-width__container {
+   position: relative;
+}
+.evo-width__container::before {
+   content: "";
+   position: absolute;
+   width: 250px;
+   height: 250px;
+   top: -143px;
+   left: 358px;
+   background-image: url("../images/evo/group9.png");
+   background-position: center;
+}
+.evo-width__container::after {
+   content: "";
+   position: absolute;
+   width: 324px;
+   height: 304px;
+   top: 0;
+   right: 0;
+   background-image: url("../images/evo/group3.png");
+   background-position: center;
+}
+.evo-width__inner {
+   width: 590px;
+   min-height: 298px;
+   margin-bottom: 83px;
+   letter-spacing: -1px;
+}
+
+.evo-width__text {
+   margin: 0;
+   margin-bottom: 30px;
+   padding-right: 20px;
+}
+
+.evo-width__text:last-child {
+   margin-bottom: 0;
+}
+
+.evo-width__text--one {
+   max-width: 305px;
+   min-height: 102px;
+}
+
+.evo-width__text--two {
+   max-width: 457px;
+   min-height: 85px;
+}
+
+.evo-width__text--three {
+   max-width: 590px;
+   min-height: 51px;
+}
+
+/* картинка с кнопкой */
+.evo-width__video {
+   width: 100%;
+   height: 258px;
+   padding-top: 104px;
+   padding-bottom: 84px;
+   display: block;
+   background-image: url("../images/evo/polygon6.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.evo-width__link {
+   max-width: 101px;
+   min-height: 70px;
+   display: flex;
+   flex-direction: column;
+   text-decoration: none;
+   letter-spacing: -1px;
+   color: var(--bg-frame);
+   margin: 0 auto;
+   align-items: center;
+   justify-content: center;
+}
+
+.evo-width__link::before {
+   content: "";
+   display: block;
+   width: 50px;
+   height: 50px;
+   left: 50%;
+   right: 50%;
+   background-image: url("../images/evo/arcticons_youtube-studio.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 50px 50px contain;
+}
+
+.evo-width__desc {
+   margin: 0;
+}

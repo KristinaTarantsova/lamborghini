@@ -14,19 +14,32 @@ img {
     /* object-fit: cover; */
     object-fit: contain;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rept (0 0 0 0);
+    overflow: hidden;
+}
+
 .header__container,
 .promo__container {
     max-width: 1200px;
     margin: 0 auto;
     /* padding: 0 10px; */
 }
+
 .container {
     width: 1220px;
     margin: 0 auto;
     padding: 0 153px;
 }
 
-/* создадет кастомные свойства */
+/* создает кастомные свойства */
 :root {
     --default: #a9a9a9;
     --color-text: #363636;
