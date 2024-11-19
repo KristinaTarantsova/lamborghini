@@ -36,7 +36,7 @@ img {
 .container {
     width: 1220px;
     margin: 0 auto;
-    padding: 0 153px;
+    padding: 0 164px;
 }
 
 /* создает кастомные свойства */
@@ -51,8 +51,10 @@ img {
     --font-size-x: 48px;
     --font-size-light: 32px;
     --font-size-xm: 34px;
+    --font-size-ml: 20px;
     --font-size-m: 16px;
     --font-size-xs: 14px;
+    --font-size-sm: 12px;
 
 }
 

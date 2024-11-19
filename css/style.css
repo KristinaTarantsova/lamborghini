@@ -12,7 +12,8 @@
 }
 
 .background {
-   height: 100%;
+   width: 100%;
+   height: 100vh;
    background-image: url("../images/bg/bg-lamborghini.jpg");
    background-position: center;
    background-repeat: no-repeat;
@@ -113,7 +114,7 @@
    flex-direction: column;
    max-width: 905px;
    margin: 0 auto;
-   min-height: 100vh;
+   min-height: 89vh;
    padding-bottom: 30px;
 }
 
@@ -131,7 +132,6 @@
 }
 
 .promo__box {
-   /* max-width: 386px; */
    margin: 0 auto;
 }
 
@@ -167,7 +167,7 @@
 
 .promo__array-link {
    margin: 0 auto;
-   margin-top: auto;
+  margin-top: auto;
 }
 
 .promo__array-link::before {
@@ -497,9 +497,11 @@
 .evo-width {
    margin-top: 143px;
 }
+
 .evo-width__container {
    position: relative;
 }
+
 .evo-width__container::before {
    content: "";
    position: absolute;
@@ -510,16 +512,18 @@
    background-image: url("../images/evo/group9.png");
    background-position: center;
 }
+
 .evo-width__container::after {
    content: "";
    position: absolute;
    width: 324px;
    height: 304px;
    top: 0;
-   right: 0;
+   right: -30px;
    background-image: url("../images/evo/group3.png");
    background-position: center;
 }
+
 .evo-width__inner {
    width: 590px;
    min-height: 298px;
@@ -590,6 +594,285 @@
    background-size: 50px 50px contain;
 }
 
+.evo-width__link:not([href]) {
+   cursor: default;
+   opacity: 0.5;
+}
+
+.evo-width__link[href]:hover::before,
+.evo-width__link:focus-visible::before {
+   opacity: 0.8;
+   transition: all 0.3s ease-out;
+}
+
+.evo-width__link[href]:active::before {
+   opacity: 0.6;
+}
+
 .evo-width__desc {
    margin: 0;
+}
+
+/* блог */
+.blog {
+   margin-bottom: 100px;
+}
+
+.blog__title {
+   font-size: var(--font-size-light);
+   font-weight: 300;
+   text-transform: uppercase;
+   margin: 0;
+}
+
+.blog__box {
+   margin: 30px auto 20px;
+}
+
+/* слайдер  */
+
+.blog__slider {
+   position: relative;
+   padding-top: 80px;
+}
+
+.blog__item {
+   max-width: 437px;
+}
+
+.blog__link {
+   display: block;
+   margin: 0;
+   text-decoration: none;
+}
+
+.blog__link:not([href]),
+.blog__detailed:not([href]) {
+   cursor: default;
+   opacity: 0.3;
+}
+
+.blog__link[href]:hover .blog__img,
+.blog__link[href]:hover .blog__header,
+.blog__detailed[href]:hover,
+.blog__link[href]:focus-visible .blog__img,
+.blog__link[href]:focus-visible .blog__header,
+.blog__detailed[href]:focus-visible {
+   color: var(--color-gold);
+   opacity: 0.8;
+   transition: all 0.3s ease-out;
+}
+
+.blog__link[href]:active .blog__img,
+.blog__link[href]:active .blog__header,
+.blog__detailed[href]:active {
+   opacity: 0.5;
+}
+
+.blog__img {
+   display: block;
+   margin-bottom: 20px;
+}
+
+.blog__header {
+   font-size: var(--font-size-ml);
+   color: var(--color-dark);
+   text-transform: uppercase;
+   font-weight: 400;
+   min-height: 46px;
+   margin: 0;
+   margin-bottom: 10px;
+   letter-spacing: -1px;
+}
+
+.blog__text {
+   margin: 0;
+   margin-bottom: 10px;
+   min-height: 87px;
+   letter-spacing: -1px;
+}
+
+.blog__detailed {
+   min-height: 14px;
+   text-decoration: none;
+   color: var(--color-text);
+   font-size: var(--font-size-sm);
+}
+
+.blog__button:hover,
+.blog__button:focus-visible {
+   opacity: 0.7;
+}
+
+.blog__button:active {
+   opacity: 0.6;
+}
+
+.blog__button {
+   position: absolute;
+   top: 30px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   cursor: pointer;
+}
+
+.blog__button--left {
+   transform: translateX(-41px);
+}
+
+.blog__button--right {
+   transform: translateX(10px);
+}
+
+/* победители */
+.winners {
+margin-bottom: 100px;
+}
+.winners__iner {
+   display: grid;
+   grid-template-columns: 434px 438px;
+   column-gap: 20px;
+   letter-spacing: -1px;
+}
+
+.winners__list {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   max-width: 434px;
+}
+
+.winners__item {
+   margin-bottom: 30px;
+}
+
+.winners__item:last-child {
+   margin-bottom: 0;
+}
+
+.winner__box {
+   margin: 0;
+}
+
+.winner__desc {
+   font-size: var(--font-size-sm);
+   margin: 0;
+   color: var(--color-gold);
+   margin-bottom: 3px;
+   padding-right: 20px;
+   min-height: 14px;
+   display: block;
+}
+
+.winner__header {
+   font-weight: 700;
+   font-size: var(--font-size-xs);
+   margin: 0;
+   padding-right: 20px;
+   min-height: 17px;
+}
+
+.winner__text {
+   margin: 0;
+   margin-top: 10px;
+   font-style: italic;
+   min-height: 69px;
+   letter-spacing: -1.19px;
+}
+
+.winner__img {
+   max-height: 272px;
+}
+/* footer */
+.contacts {
+   background-color: var(--color-text);
+   color: var(--bg-frame);
+   padding: 100px 0 79px;
+   letter-spacing: -1px;
+}
+.contacts__title {
+   font-weight: 300;
+   font-size: var(--font-size-light);
+   text-transform: uppercase;
+   margin: 0;
+   padding-right: 30px;
+   min-height: 38px;
+}
+.contacts__inner {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+
+.contacts__holder {
+   max-width: 211px;
+   display: flex;
+   flex-direction: column;
+   row-gap: 50px;
+}
+
+.contacts__header {
+   font-weight: 700;
+   font-size: var(--font-size-m);
+   text-transform: uppercase;
+   margin: 0;
+   margin-bottom: 20px;
+   min-height: 19px;
+}
+.contacts__link {
+   color: var(--bg-frame);
+   font-size: var(--font-size-m);
+   text-decoration: none;
+   display: block;
+   margin-bottom: 10px;
+   min-height: 18px;
+}
+.contacts__link:last-child {
+   margin-bottom: 0;
+}
+/* соцсети */
+.contacts__social {
+   display: flex;
+   column-gap: 20px;
+}
+/* карта map */
+.map {
+   font-size: var(--font-size-m);
+   font-style: normal;
+   letter-spacing: -1px;
+}
+.map__header {
+   font-weight: 700;
+   font-size: var(--font-size-m);
+   text-transform: uppercase;
+   margin: 0;
+   margin-bottom: 20px;
+   min-height: 19px;
+   padding-right: 10px;
+}
+.map__text {
+   margin: 0;
+   margin-bottom: 20px;
+}
+.map__img {
+   display: block;
+
+}
+/* инфо */
+.info {
+   margin-top: 87px;
+   display: flex;
+   justify-content: space-between;
+}
+.info__text {
+   margin: 0;
+   align-self: center;
+   min-height: 17px;
+}
+.info__polici {
+   text-decoration: none;
+   color:var(--bg-frame);
+   display: block;
+   align-self: center;
+   min-height: 17px;
 }
